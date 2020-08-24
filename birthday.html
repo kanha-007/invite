@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BirthDay Invitation</title>
+    
+</head>
+<body>
+    <div>
+        <img id="env" src="images (3).jpeg" style="padding-left:30px ; padding-top: 50px;" width="300" onclick="change()" height="400" alt="a">
+        <h3 id="tap" style=" padding-left:150px">Tap on image</h3>
+    </div>
+    <div>
+        <a id="link" style="visibility: hidden" href="https://forms.gle/nReaWp47Cb8AgZ9D7" ><h2>Tap Here</h2></a>
+
+    </div>
+
+    
+</body>
+<script>
+    var count=1;
+function change(){
+    if(count==1)
+    {document.getElementById("env").src="card.png";
+    document.getElementById("tap").style="visibility:hidden";
+       
+    count++;
+    }
+    else
+    {
+        document.getElementById("env").src="msg.png";
+        document.getElementById("link").style="padding-left:280px;color:black;text-decoration:none;visibility:visible";
+     
+
+    }
+    
+}
+
+</script>
+</html>
